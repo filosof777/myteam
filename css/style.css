@@ -277,6 +277,17 @@ a {
   background-repeat: no-repeat;
 }
 
+.stories::after{
+  content: '';
+  background-image: url("../img/stories-up.svg");
+  width: 147px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
 .stories__text {
   color: var(--color-white);
   font-weight: 600;
@@ -387,6 +398,14 @@ a {
 }
 
 .social__item {
-
   margin-right: 16px;
+}
+
+.social-icon {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+
+.social-icon:hover {
+  fill: var(--color-red);
 }
